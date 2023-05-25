@@ -1,18 +1,23 @@
 {
   "name": "okchef",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
+    "@picovoice/porcupine-react-native": "^2.2.0",
+    "@picovoice/react-native-voice-processor": "^1.1.0",
     "expo": "~48.0.15",
+    "expo-splash-screen": "~0.18.2",
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
-    "react-native": "0.71.8"
+    "react-native": "0.71.8",
+    "react-native-fs": "^2.20.0",
+    "react-native-tts": "^4.1.0",
+    "react-native-voice": "^0.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
